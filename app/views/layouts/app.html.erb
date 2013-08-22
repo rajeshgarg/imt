@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <%= stylesheet_link_tag "/stylesheets/application" %>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+    
+      <%= stylesheet_link_tag "/stylesheets/main","/stylesheets/demos","/stylesheets/jquery.Jcrop"  %>
+   <%= javascript_include_tag  "/javascripts/jquery","/javascripts/jcrop/jquery.ui.core","/javascripts/jcrop/jquery.ui.widget","/javascripts/jcrop/jquery.ui.mouse","/javascripts/jcrop/jquery.ui.droppable", "/javascripts/jcrop/jquery.ui.draggable", "/javascripts/jcrop/jquery.ui.resizable" %>
+   <%=javascript_include_tag "/javascripts/jcrop/jquery.fileupload-5.11.2","/javascripts/imagetool/jquery.fileupload-ui","/javascripts/imagetool/jquery.fileupload-fp" %>
+   <%#=# "/javascripts/imagetool/customupload", "/javascripts/imagetool/form","/javascripts/jcrop/jquery.Jcrop.js" %>
+    <%= javascript_include_tag "/javascripts/imagetool/form","/javascripts/imagetool/customupload","/javascripts/imagetool/application" %>
+    <script type="text/javascript" src="/javascripts/imagetool/modalPopLite.min.js"></script>
+<script type="text/javascript" src="/javascripts/imagetool/modalPopLite.js"></script>
+   
+    
+  
+    <%= csrf_meta_tag %>
+    <%= yield(:head) %>
+ 
+  <body>
+
+  
+      <%= yield %>
+   
+  </body>
+</html>

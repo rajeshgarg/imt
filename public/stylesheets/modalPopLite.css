@@ -1,0 +1,166 @@
+﻿.modalPopLite-mask {
+	background-color: #fff;
+	display: none;
+	height: 100% !important;
+	left: 0;
+	position: fixed;top: 0; width: 100%;
+	z-index: 9994;
+	}
+.modalPopLite-wrapper {
+	background: #f6f8f3;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.2);
+	color: #333;
+	min-height: 300px;
+	padding: 10px;
+	position: fixed;
+	top: 20% !important;
+	z-index: 9995;
+	margin: 0 auto !important;
+	width: 500px !important;
+	}
+.close-bt {
+	float: right; 
+	margin-bottom: 10px;
+	}
+.close-bt img {
+	border:none;
+	}
+.image-heading {
+	clear: both;
+	font-weight: bold;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 2px;
+	}
+.img-edit {
+	background: -moz-linear-gradient(center top , #8FC73E 0%, #84B83A 100%) repeat scroll 0 0 #84B83A;
+	border-radius: 3px;
+	clear: both;
+	margin-top: 20px;
+	-moz-border-radius: 3px;
+	padding: 5px;
+	text-align: center;
+	-webkit-border-radius: 3px;
+	}
+.img-edit a {
+	margin:0 20px;
+	}
+
+.original-img, .preview-img { 
+ 	clear: both;
+ 	border-top: 1px dashed #cccccc;
+ 	margin-top: 5px;
+	}
+.original-img img, .preview-img img { 
+ 	border: 1px solid #cccccc; 
+	margin:10px;
+ 	}
+ 
+/* popup */
+.popBox-holder 
+{
+  background-color:#000;
+  display:none;
+  filter:alpha(opacity=40);
+  height:100%;
+  left: 0px;
+  opacity:0.5;
+  position: absolute;
+  text-align:center;
+  top: 0px;
+  width:100%;
+  z-index: 999;
+  }
+.popBox-container 
+{
+  background-color: #fff;
+  border: 4px solid #000;
+  border-radius: .5em;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  display: none;
+  -moz-border-radius: .5em;
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  padding:10px;
+  text-align:center;
+  -webkit-border-radius: .5em; 
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  z-index: 1000;
+}
+.popBox-container .done-button
+{
+  margin-top:10px;
+}
+.popBox-container .button {
+	border-radius: .5em;
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	cursor: pointer;
+	display: inline-block;
+	*display: inline;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	margin: 0 2px;
+	-moz-border-radius: .5em;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	outline: none;
+	padding: .5em 2em .55em;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	vertical-align: baseline;
+	-webkit-border-radius: .5em; 
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+}
+.popBox-container .button:hover {
+	text-decoration: none;
+}
+.popBox-container .button:active {
+	position: relative;
+	top: 1px;
+}
+
+.popBox-container .small {
+	font-size: 11px;
+	padding: .2em 1em .275em;
+}
+.popBox-container .blue {
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	border: solid 1px #0076a3;
+	color: #d9eef7;
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+}
+.popBox-container .blue:hover {
+	background: #007ead;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+	background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
+}
+.popBox-container .blue:active {
+	color: #80bed6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
+	background: -moz-linear-gradient(top,  #0078a5,  #00adee);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
+}
+
+.popBox-ajax-progress
+{ 
+	text-align:center;
+	z-index: 99999;
+	background-color:#000;
+	background-image: url('ajax-loader.gif');
+	background-repeat:no-repeat;
+	background-position:center center;
+	filter:alpha(opacity=40);
+	height:100%;
+	left: 0px;
+	opacity:0.5;
+	position: fixed;
+	top: 0px;
+	width:100%;
+}
+/* end popup */
+

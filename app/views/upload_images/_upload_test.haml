@@ -1,0 +1,6 @@
+- content_for :head do
+  = stylesheet_link_tag "jcrop/main","jcrop/demos","jcrop/jquery.Jcrop" ,"ext/jquery.ui"
+  = javascript_include_tag "jcrop/jjcrop" 
+= render :partial=> "upload_images/upload_file"
+
+= render :partial=> "upload_images/popup"

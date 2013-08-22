@@ -1,0 +1,36 @@
+%link{:href => "/assets/Modal_image_edit/css/modalPopLite.sass", :rel => "stylesheet", :type => "text/css"}/
+%script{:src => "/assets/Modal_image_edit/js/modalPopLite.min.js", :type => "text/javascript"}
+:javascript
+  $(function () {
+      $('#popup-wrapper').modalPopLite({ openButton: '#clicker', closeButton: '#close-btn' });
+  });
+   
+#clicker Click Me!
+#popup-wrapper
+  .close-bt
+    %a#close-btn{:href => "#"}
+      %img{:alt => "", :height => "14", :longdesc => "/", :src => "/assets/Modal_image_edit/images/colorbox_close.png", :width => "14"}/
+  / start of original -image
+  %h6.image-heading Original Image
+  .original-img.logo.uploaded_img
+    =image_tag(session["file1"],:id=>"imglogo")
+     
+  / end of original image
+  / start of preview -image
+  %h6.image-heading Modified Image
+  #croped.preview-img
+    %img{:alt => "", :src => "/assets/Modal_image_edit/images/big.gif"}/
+  / end of preview image
+  .img-edit
+    %span{:href => "#"}
+      %img.rotate{:alt => "rotate", :src => "/assets/Modal_image_edit/images/rotate.png", :title => "Rotate Clockwise"}
+    %span{:href => "#"}
+      %img.rotateanti{:alt => "rotateanti", :src => "/assets/Modal_image_edit/images/rotate-anti.png", :title => "Rotate Anti Clockwise"}
+    %span{:href => "#"}
+      %img.flipit{:alt => "flip horizontal", :src => "/assets/Modal_image_edit/images/flip-horizontal.png", :title => "Flip Horizontal"}
+    %span{:href => "#"}
+      %img.flopit{:alt => "flip vertical", :src => "/assets/Modal_image_edit/images/flip-vertical.png", :title => "Flip Vertical"}
+    %span{:href => "#"}
+      %img.saveit{:alt => "crop", :src => "/assets/Modal_image_edit/images/crop.png", :title => "Crop Image"}/
+    %span{:href => "#"}
+      %img.resizeit{:alt => "resize", :height => "26", :src => "/assets/Modal_image_edit/images/resize.png", :title => "Resize Image", :width => "26"}

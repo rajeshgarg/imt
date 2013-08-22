@@ -1,0 +1,51 @@
+
+<link type="text/css" rel="stylesheet" href="/stylesheets/modalPopLite.css">
+
+<script>
+   
+    $(function () {
+        $('#popup-wrapper').modalPopLite({ openButton: '#clicker', closeButton: '#close-btn' });
+    });
+   
+</script>
+<div id="clicker">Click Me!</div>
+<div id="popup-wrapper">
+  <div class="close-bt">
+    <a id="close-btn" href="#">
+      <img height="14" width="14" src="/images/colorbox_close.png" longdesc="/" alt="">
+    </a>
+  </div>
+  <!-- start of original -image -->
+  <h6 class="image-heading">Original Image</h6>
+  <div class="original-img logo uploaded_img">
+    <img src="/images/" id="imglogo" alt="Assets">
+  </div>
+  <!-- end of original image -->
+  <!-- start of preview -image -->
+  <h6 class="image-heading">Modified Image</h6>
+  <div id="croped" class="preview-img">
+    <img src="/images/big.gif" alt="">
+  </div>
+  <!-- end of preview image -->
+  <div class="img-edit">
+    <span href="">
+      <img title="Rotate Clockwise" src="/images/rotate.png" class="rotate" alt="rotate">
+    </span>
+    <span href="#">
+      <img title="Rotate Anti Clockwise" src="/images/rotate-anti.png" class="rotateanti" alt="rotate">
+    </span>
+    <span href="#">
+      <img title="Flip Horizontal" src="/images/flip-horizontal.png" class="flipit" alt="flip horizontal">
+    </span>
+    <span href="#">
+      <img title="Flip Vertical" src="/images/flip-vertical.png" class="flopit" alt="flip vertical">
+    </span>
+    <span href="#">
+      <img title="Crop Image" src="/images/crop.png" class="saveit" alt="crop">
+    </span>
+    <span href="#">
+      <img height="26" width="26" title="Resize Image" src="/images/resize.png" class="resizeit" alt="resize">
+    </span>
+  </div>
+</div>
+    </div>

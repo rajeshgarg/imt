@@ -1,0 +1,30 @@
+<% title @gallery.name %>
+<div id="paintings">
+  <% for painting in @gallery.paintings %>
+    <div class="painting">
+      <% # painting1 =painting 
+      #painting1 =  Magick::Image.read("public" + painting.image_url(:thumb)).first if painting.image?
+      #    painting1 = painting1.rotate(90)
+          # painting1.write("public" + painting.image_url(:thumb))
+      %>
+       
+       <%= image_tag painting.image_url(:thumb) ,:class=>"sss" %>
+      <div class="name"><%= painting.name %></div>
+      <div class="actions">
+        <span class="edit">rotate crop image</span>
+        <%= link_to "edit", edit_painting_path(painting)  %> |
+        <%= link_to "remove", painting, :confirm => 'Are you sure?', :method => :delete %>
+      </div>
+    </div>
+  <% end %>
+  <div class="clear"></div>
+</div>
+
+<p>
+  <div id="croped1" style="background:red;">
+  <%=image_tag show_blob_image_galleries_path %>
+  <div>
+  <%= link_to "Add a Painting", new_painting_path(:gallery_id => @gallery) %> |
+  <%= link_to "Remove Gallery", @gallery, :confirm => 'Are you sure?', :method => :delete %> |
+  <%#= link_to "View Galleries", galleries_path %>
+</p>

@@ -1,0 +1,9 @@
+#fileupload
+  = simple_form_for :sales_lead, url: '/upload_image/get_file', :html => { :multipart => true } do |f|
+    .fileupload-buttonbar
+      %label.fileinput-button
+        %span Add files...
+        = file_field_tag :image
+  .fileupload-content
+    %table.files
+    .fileupload-progressbar

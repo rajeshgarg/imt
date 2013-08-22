@@ -1,0 +1,23 @@
+<div id="content">
+      <div id="flash-message" class="mtx row">
+      </div>
+      <div id="fileupload">
+  <form novalidate="novalidate" method="post" enctype="multipart/form-data" class="simple_form sales_lead" action="/galleries/get_file" accept-charset="UTF-8">
+    <div style="margin:0;padding:0;display:inline">
+      <input type="hidden" value="✓" name="utf8">
+      <input type="hidden" value="EGfo7DPGDnCjlLOlpK9iMINVuWji71LFqE8Ll6eVPqY=" name="authenticity_token">
+    </div>
+    <div class="fileupload-buttonbar">
+      <label class="fileinput-button">
+        <span>Add files...</span>
+        <input type="file" name="image" id="image">
+      </label>
+    </div>
+  </form>
+  <div class="fileupload-content">
+    <table class="files"></table>
+    <div class="fileupload-progressbar"></div>
+  </div>
+</div>
+<%= render :partial => "popup" %>
+
